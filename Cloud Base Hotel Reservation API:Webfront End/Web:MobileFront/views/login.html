@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block maincontent %}
+
+<h1>Login</h1>
+
+<form class="form" action= "/login" method="POST">
+	<label>Username</label>
+	<input type="text" value="{{ username }}" name="username"/>
+	<label>Password</label>
+	<input type="password" name="password"/>
+	<button type="submit" class="btn">Login</button>
+</form>
+{% if failed %}
+    <p>Login failed! Username and Password doesn't match.</p>
+{% endif %}
+
+{% endblock %}

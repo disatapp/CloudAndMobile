@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+
+{% block title %}Register a new user{% endblock %}
+
+{% block maincontent %}
+
+<h1>Register a new user</h1>
+	<form action ='add_ch' method = "post" enctype = "multipart/form-data">
+	<label>Upload Picture: </label><input type = "file" name ="icon">
+</form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+
+{% block maincontent %}
+
+<h1>Hello {{ user.name }}!</h1>
+	<p>
+        <a href="/user/edit">Edit</a>
+        <a href="/user/view">View</a>
+        <a href="/user/delete">Secured page</a> 
+	</p>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block maincontent %}
+
+<h1>Create a new customer</h1>
+<form action="/create" method="post">
+	<form action='post'>
+		<label>Name</label>
+		<input type="text" name="name" id="name"/>
+		<label>email</label>
+		<input type="text" name="email" id="email"/>
+		<label>phone</label>
+		<input type="text" name="phone" id="phone"/>
+		<button class="button">submit</button>
+	</form>
+</div>
+
+<div id="display">
+</div>
+
+{% endblock %}
+ 

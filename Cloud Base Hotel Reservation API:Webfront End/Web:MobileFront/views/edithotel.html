@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block maincontent %}
+
+<h1>Add a relation</h1>
+<form action="/edithotel" method="post">
+	<label>hotel</label>
+	<input type="text" name="name"/>
+	<label>customer</label>
+	<input type="text" name="customer"/>
+	<input id = "addchild" type="submit" value="Add relation"/>
+</form>
+
+<div id="display"></div>
+
+{% endblock %}

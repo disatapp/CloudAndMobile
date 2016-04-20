@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}User accounts{% endblock %}</title>
+  </head>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <body>
+    <div>
+      <hr/>
+      <p>
+        {% if not user %}
+          <a href="/login">Login</a>
+          |
+          <a href="/signup">New user</a>
+        {% else %}
+          User: <span style="background-color: OldLace">{{ user.name }}</span> | <a href="/logout">Logout</a>
+        {% endif %}
+        <br>
+        <br>
+        <a href="/">Home</a>
+        {% if user %}
+        |
+        <a href="/user">View data</a>
+        {% endif %}
+      </p>
+    </div>
+
+  <div class="content">
+    {% block maincontent %}
+
+    {% endblock %}
+  </div>
+
+
+
+  </body>
+</html>

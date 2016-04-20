@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block maincontent %}
+
+<h1>Hi {{ user.name }}!</h1>
+	<p>
+        <a href="/create">Create</a>
+        <a href="/display">View</a>
+        <a href="/delete">Delete</a> 
+        <a href="/hotelcustomer">Add Relation</a>
+        <a href="/createhotel">Create Hotel</a>
+        <a href="/viewhotel">View Hotel</a> 
+	</p>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block title %}Register a new user{% endblock %}
+
+{% block maincontent %}
+
+<h1>Register a new user</h1>
+<form action="/signup" method="POST">
+	<label>Name</label>
+	<input type="text" name="name"/>
+	<label>Last Name</label>
+	<input type="text" name="lastname"/>
+	<label>Username</label>
+	<input type="text" name="username"/>
+	<label>Email</label>
+	<input type="text" name="email"/>
+	<label>Password</label>
+	<input type="password" name="password"/>
+	<input type="submit" value="Create user"/>
+</form>
+
+{% endblock %}
